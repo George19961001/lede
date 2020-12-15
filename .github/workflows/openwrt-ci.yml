@@ -52,7 +52,7 @@ jobs:
           cd package
           mkdir openwrt-packages
           cd openwrt-packages
-          git clone 
+          git clone https://github.com/xiaorouji/openwrt-passwall
 
           # sudo mkdir -p -m 777 /mnt/openwrt/bin /mnt/openwrt/build_dir/host /mnt/openwrt/build_dir/hostpkg /mnt/openwrt/dl /mnt/openwrt/feeds /mnt/openwrt/staging_dir
           # ln -s /mnt/openwrt/bin ./bin
@@ -111,6 +111,7 @@ jobs:
           cat >> .config <<EOF
           CONFIG_PACKAGE_luci-app-adbyby-plus=y
           CONFIG_PACKAGE_luci-app-aria2=y
+          CONFIG_PACKAGE_luci-app-passwall=y
           EOF
 
           #
