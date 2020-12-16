@@ -110,7 +110,7 @@ jobs:
           
           # 常用LuCI插件选择:
           cat >> .config <<EOF
-          CONFIG_PACKAGE_luci-app-unblockmusic=y
+          CONFIG_PACKAGE_luci-app-unblockmusic1=y
           CONFIG_PACKAGE_luci-app-koolproxy=y
           EOF
           
